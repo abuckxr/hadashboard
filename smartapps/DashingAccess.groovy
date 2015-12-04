@@ -38,7 +38,10 @@ preferences {
         input "switches", "capability.switch", title: "Which switches?", multiple: true, required: false
         input "temperatures", "capability.temperatureMeasurement", title: "Which temperature sensors?", multiple: true, required: false
         input "humidities", "capability.relativeHumidityMeasurement", title: "Which humidity sensors?", multiple: true, required: false
-
+        input "threeaxes", "capability.threeAxis", title: "Which Three Axis sensors?", multiple: true, required: false
+        input "accelerometers", "capability.accelerationSensor", title: "Which accelerations sensors?", multiple: true, required: false
+        input "batteries", "capability.battery", title: "Which batteries?", multiple: true, required: false
+        input "signals", "capability.signalStrength", title "Which signal sensors?", multipple: true, required: false
     }
 }
 
@@ -122,6 +125,7 @@ mappings {
             GET: "getWeather"
         ]
     }
+    //TODO: multiswtich
 }
 
 
@@ -151,7 +155,10 @@ def initialize() {
         "switch": [:],
         "temperature": [:],
         "humidity": [:],
-
+        "threeaxis": [:],
+        "accelerometer": [:],
+        "battery": [:],
+        "signal": [:],
         ]
 
     subscribe(contacts, "contact", contactHandler)
@@ -165,7 +172,7 @@ def initialize() {
     subscribe(switches, "switch", switchHandler)
     subscribe(temperatures, "temperature", temperatureHandler)
     subscribe(humidities, "humidity", humidityHandler)
-
+    //TODO: multiswitch
 }
 
 
