@@ -1,7 +1,8 @@
 // ----------------------------------------------------------------------------
-// Widget-stcontact styles
+// Widget-stmulti styles
 // ----------------------------------------------------------------------------
-.widget-stcontact {
+// Widget to display SmartThings SmartSense Garage  Door Multi switch
+.widget-stmulti {
 
   .title {
     color: #fff;
@@ -15,4 +16,31 @@
   	color: #888888;
   }
 
+  .state {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: rgba(255,255,255,0.7);
+  }
+  
+  .temp {
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    font-size: 25px
+    width: 32px;
+    left: 8px;
+    color: rgba(255,255,255,0.7);
+  }
+  
+  .battery {
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    font-size: 25px
+    width: 32px;
+    right: 24px;
+    color: rgba(255,255,255,0.7);
+  }
+  
+  
 }
