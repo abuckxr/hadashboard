@@ -1,5 +1,5 @@
 
-class Dashing.Stcontact extends Dashing.Widget
+class Dashing.Stmulti extends Dashing.Widget
   constructor: ->
     super
     @queryState()
