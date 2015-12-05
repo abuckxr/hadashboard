@@ -12,6 +12,10 @@ class Dashing.Stmulti extends Dashing.Widget
     get: -> if @_value then Math.floor(@_value) else 0
     set: (key, value) -> @_value = value
 
+  @accessor 'battery',
+    get: -> if @_value then Math.floor(@_value) else 0
+    set: (key, value) -> @_value = value
+    
   @accessor 'icon',
     get: -> if @get('state') == 'open' then 'expand' else 'compress'
     set: Batman.Property.defaultAccessor.set
@@ -35,6 +39,14 @@ class Dashing.Stmulti extends Dashing.Widget
       (data) =>
         json = JSON.parse data
         @set 'temp', json.value
+
+    $.get '/smartthings/dispatch',
+      widgetId: @get('id'),
+      deviceType: 'battery',
+      deviceId: @get('device')
+      (data) =>
+        json = JSON.parse data
+        @set 'battery', json.value
         
   ready: ->
 
