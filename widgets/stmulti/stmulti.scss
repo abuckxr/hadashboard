@@ -31,6 +31,11 @@
     color: rgba(255,255,255,0.7);
   }
   
+  .tempunit {
+    display: inline-block;
+    color: rgba(255,255,255,0.7);
+
+  }
   .battery {
     display: inline-block;
     position: absolute;
@@ -39,5 +44,9 @@
     right: 24px;
     color: rgba(255,255,255,0.7);
   }
-  
+
+  .batteryunit {
+    display: inline-block;
+    color: rgba(255,255,255,0.7);
+
 }
