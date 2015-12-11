@@ -24,29 +24,29 @@
   
   .temp {
     display: inline-block;
-    position: absolute;
-    bottom: 0px;
-    width: 32px;
+    margin-bottom: 5px;
     left: 8px;
     color: rgba(255,255,255,0.7);
   }
   
   .tempunit {
     display: inline-block;
+    margin-bottom: 5px;
+    left: 6px;
     color: rgba(255,255,255,0.7);
   }
   
   .battery {
     display: inline-block;
-    position: absolute;
-    bottom: 0px;
-    width: 32px;
+    margin-bottom: 5px;
     right: 24px;
     color: rgba(255,255,255,0.7);
   }
 
   .batteryunit {
     display: inline-block;
+    margin-bottom: 5px;
+    right: 26px;
     color: rgba(255,255,255,0.7);
   }
 
