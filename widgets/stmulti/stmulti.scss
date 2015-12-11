@@ -21,7 +21,7 @@
     margin-bottom: 5px;
     color: rgba(255,255,255,0.7);
   }
-  
+  /*
   .temp {
     display: inline-block;
     position: absolute;
@@ -52,6 +52,32 @@
     bottom: 0px;
     right: 6px;
     color: rgba(255,255,255,0.7);
+  }
+  */
+  .secondary-unit {
+    position: absolute;
+    bottom: 0px;
+    font-size: 25px;
+    width: 32px;
+    color: #888888;
+
+    &.temp {
+      right: 24px;
+
+      .temp-unit {
+        padding-top: 10px;
+        padding-left: 30px;
+      }
+    }
+
+    &.battery {
+      left: 8px;
+
+      .battery-unit {
+        padding-top: 10px;
+        padding-right: 30px;
+      }
+    }
   }
 
 }
